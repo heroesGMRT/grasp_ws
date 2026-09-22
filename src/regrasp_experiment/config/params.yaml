@@ -1,0 +1,12 @@
+regrasp_experiment:
+  ros__parameters:
+    # Parameter yang WAJIB dilaporkan di paper (Section 4.2)
+    fusion_lambda: 0.02      # sensitivitas noise depth (Pers. 1)
+    score_alpha: 1.0         # bobot S_geo (Pers. 7)
+    score_beta: 1.0          # bobot S_conf
+    score_gamma: 1.0         # bobot uncertainty
+    tau: 0.30                # ambang grasp valid
+    rho: 0.5                 # decay confidence-memory (Pers. 10)
+    K: 4                     # maksimum attempt
+    hand_eye_path: "config/hand_eye.npy"
+    detector_weights: ""     # isi path bobot GR-ConvNet/GG-CNN

@@ -1,0 +1,26 @@
+[1.810s] Invoking command in '/home/heroes/Workspace/eksperimen_R2/grasp_ws/src/regrasp_experiment': PYTHONPATH=/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/regrasp_experiment build --build-base /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build install --record /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/install.log --single-version-externally-managed install_data
+[2.454s] running egg_info
+[2.455s] writing ../../build/regrasp_experiment/regrasp_experiment.egg-info/PKG-INFO
+[2.456s] writing dependency_links to ../../build/regrasp_experiment/regrasp_experiment.egg-info/dependency_links.txt
+[2.456s] writing entry points to ../../build/regrasp_experiment/regrasp_experiment.egg-info/entry_points.txt
+[2.457s] writing requirements to ../../build/regrasp_experiment/regrasp_experiment.egg-info/requires.txt
+[2.457s] writing top-level names to ../../build/regrasp_experiment/regrasp_experiment.egg-info/top_level.txt
+[2.461s] reading manifest file '../../build/regrasp_experiment/regrasp_experiment.egg-info/SOURCES.txt'
+[2.464s] writing manifest file '../../build/regrasp_experiment/regrasp_experiment.egg-info/SOURCES.txt'
+[2.464s] running build
+[2.465s] running build_py
+[2.465s] copying regrasp_experiment/spearhead_servo.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment
+[2.467s] running install
+[2.468s] running install_lib
+[2.470s] copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/spearhead_servo.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+[2.473s] byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/spearhead_servo.py to spearhead_servo.cpython-310.pyc
+[2.495s] running install_data
+[2.496s] running install_egg_info
+[2.500s] removing '/home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment-0.1.0-py3.10.egg-info' (and everything under it)
+[2.501s] Copying ../../build/regrasp_experiment/regrasp_experiment.egg-info to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment-0.1.0-py3.10.egg-info
+[2.504s] running install_scripts
+[2.556s] Installing experiment script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.556s] Installing spearhead_dashboard script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.556s] Installing spearhead_servo script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.558s] writing list of installed files to '/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/install.log'
+[2.636s] Invoked command in '/home/heroes/Workspace/eksperimen_R2/grasp_ws/src/regrasp_experiment' returned '0': PYTHONPATH=/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/regrasp_experiment build --build-base /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build install --record /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/install.log --single-version-externally-managed install_data

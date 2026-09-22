@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing regrasp_experiment.egg-info/PKG-INFO
+writing dependency_links to regrasp_experiment.egg-info/dependency_links.txt
+writing entry points to regrasp_experiment.egg-info/entry_points.txt
+writing requirements to regrasp_experiment.egg-info/requires.txt
+writing top-level names to regrasp_experiment.egg-info/top_level.txt
+reading manifest file 'regrasp_experiment.egg-info/SOURCES.txt'
+writing manifest file 'regrasp_experiment.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp-experiment.egg-link (link to .)
+Installing experiment script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+Installing spearhead_dashboard script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+Installing spearhead_servo script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+
+Installed /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment
+running symlink_data

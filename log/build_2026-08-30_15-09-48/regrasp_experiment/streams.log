@@ -1,0 +1,25 @@
+[1.818s] Invoking command in '/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment': PYTHONPATH=/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build --no-deps symlink_data --force
+[2.495s] running develop
+[2.952s] running egg_info
+[2.953s] writing regrasp_experiment.egg-info/PKG-INFO
+[2.953s] writing dependency_links to regrasp_experiment.egg-info/dependency_links.txt
+[2.954s] writing entry points to regrasp_experiment.egg-info/entry_points.txt
+[2.954s] writing requirements to regrasp_experiment.egg-info/requires.txt
+[2.954s] writing top-level names to regrasp_experiment.egg-info/top_level.txt
+[2.958s] reading manifest file 'regrasp_experiment.egg-info/SOURCES.txt'
+[2.961s] writing manifest file 'regrasp_experiment.egg-info/SOURCES.txt'
+[2.966s] running build_ext
+[2.966s] Creating /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp-experiment.egg-link (link to .)
+[2.968s] Installing experiment script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.968s] Installing spearhead_dashboard script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.969s] Installing spearhead_servo script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.969s] 
+[2.970s] Installed /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment
+[2.970s] running symlink_data
+[2.971s] symbolically linking /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/resource/regrasp_experiment -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/ament_index/resource_index/packages
+[2.971s] symbolically linking /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/package.xml -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment
+[2.971s] symbolically linking /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/launch/spearhead_servo.launch.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/launch
+[2.972s] symbolically linking /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/launch/experiment.launch.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/launch
+[2.972s] symbolically linking /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/config/params.yaml -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/config
+[2.972s] symbolically linking /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/config/spearhead_servo.yaml -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/config
+[3.065s] Invoked command in '/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment' returned '0': PYTHONPATH=/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build --no-deps symlink_data --force

@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.001274] (regrasp_experiment) JobQueued: {'identifier': 'regrasp_experiment', 'dependencies': OrderedDict()}
+[0.001393] (regrasp_experiment) JobStarted: {'identifier': 'regrasp_experiment'}
+[0.097781] (-) TimerEvent: {}
+[0.198509] (-) TimerEvent: {}
+[0.224335] (regrasp_experiment) JobEnded: {'identifier': 'regrasp_experiment', 'rc': 0}
+[0.226927] (-) EventReactorShutdown: {}

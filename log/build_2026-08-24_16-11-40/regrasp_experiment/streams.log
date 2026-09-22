@@ -1,0 +1,41 @@
+[1.700s] Invoking command in '/home/heroes/Workspace/eksperimen_R2/grasp_ws/src/regrasp_experiment': PYTHONPATH=/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/regrasp_experiment build --build-base /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build install --record /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/install.log --single-version-externally-managed install_data
+[2.314s] running egg_info
+[2.316s] writing ../../build/regrasp_experiment/regrasp_experiment.egg-info/PKG-INFO
+[2.316s] writing dependency_links to ../../build/regrasp_experiment/regrasp_experiment.egg-info/dependency_links.txt
+[2.317s] writing entry points to ../../build/regrasp_experiment/regrasp_experiment.egg-info/entry_points.txt
+[2.317s] writing requirements to ../../build/regrasp_experiment/regrasp_experiment.egg-info/requires.txt
+[2.317s] writing top-level names to ../../build/regrasp_experiment/regrasp_experiment.egg-info/top_level.txt
+[2.321s] reading manifest file '../../build/regrasp_experiment/regrasp_experiment.egg-info/SOURCES.txt'
+[2.324s] writing manifest file '../../build/regrasp_experiment/regrasp_experiment.egg-info/SOURCES.txt'
+[2.324s] running build
+[2.324s] running build_py
+[2.325s] copying regrasp_experiment/grip_outcome.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment
+[2.325s] copying regrasp_experiment/depth_measurement.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment
+[2.325s] copying regrasp_experiment/spearhead_dashboard.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment
+[2.326s] copying regrasp_experiment/spearhead_servo.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment
+[2.326s] copying regrasp_experiment/motion_control.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment
+[2.327s] running install
+[2.328s] running install_lib
+[2.330s] copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/grip_outcome.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+[2.330s] copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/depth_measurement.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+[2.330s] copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/spearhead_dashboard.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+[2.331s] copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/spearhead_servo.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+[2.331s] copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/motion_control.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+[2.334s] byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/grip_outcome.py to grip_outcome.cpython-310.pyc
+[2.335s] byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/depth_measurement.py to depth_measurement.cpython-310.pyc
+[2.336s] byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/spearhead_dashboard.py to spearhead_dashboard.cpython-310.pyc
+[2.338s] byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/spearhead_servo.py to spearhead_servo.cpython-310.pyc
+[2.358s] byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/motion_control.py to motion_control.cpython-310.pyc
+[2.359s] running install_data
+[2.360s] copying package.xml -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment
+[2.360s] copying launch/spearhead_servo.launch.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/launch
+[2.361s] copying config/spearhead_servo.yaml -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/config
+[2.361s] running install_egg_info
+[2.365s] removing '/home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment-0.1.0-py3.10.egg-info' (and everything under it)
+[2.366s] Copying ../../build/regrasp_experiment/regrasp_experiment.egg-info to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment-0.1.0-py3.10.egg-info
+[2.369s] running install_scripts
+[2.416s] Installing experiment script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.416s] Installing spearhead_dashboard script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.416s] Installing spearhead_servo script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+[2.418s] writing list of installed files to '/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/install.log'
+[2.487s] Invoked command in '/home/heroes/Workspace/eksperimen_R2/grasp_ws/src/regrasp_experiment' returned '0': PYTHONPATH=/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/regrasp_experiment build --build-base /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build install --record /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/install.log --single-version-externally-managed install_data

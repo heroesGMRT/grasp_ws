@@ -1,0 +1,5 @@
+trial_id,timestamp,run,method,condition,object_id,attempt,region,moved,outcome,cause,latency_ms,scene_success,notes
+T-0001,2026-08-26T17:21:16,run-1,OURS,C1_structured,fist,0,"(41, 40)",,fail,invalid_depth,94.4,False,
+T-0001,2026-08-26T17:21:16,run-1,OURS,C1_structured,fist,1,"(4, 59)",,fail,invalid_depth,68.8,False,
+T-0001,2026-08-26T17:21:16,run-1,OURS,C1_structured,fist,2,"(63, 7)",,fail,invalid_depth,52.4,False,
+T-0001,2026-08-26T17:21:16,run-1,OURS,C1_structured,fist,3,"(569, 161)",,fail,invalid_depth,49.6,False,

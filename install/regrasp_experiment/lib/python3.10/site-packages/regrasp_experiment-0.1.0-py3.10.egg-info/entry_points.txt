@@ -1,0 +1,5 @@
+[console_scripts]
+experiment = regrasp_experiment.experiment_node:main
+spearhead_dashboard = regrasp_experiment.spearhead_dashboard:main
+spearhead_servo = regrasp_experiment.spearhead_servo:main
+

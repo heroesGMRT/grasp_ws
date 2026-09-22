@@ -1,0 +1,111 @@
+spearhead_servo:
+  ros__parameters:
+    depth_topic: "/camera/camera/aligned_depth_to_color/image_raw"
+    color_topic: "/camera/camera/color/image_raw"
+    info_topic: "/camera/camera/color/camera_info"
+    imu_topic: "/camera/camera/imu"
+    cmd_vel_topic: "/cmd_vel"
+    odom_topic: "/teensy_odom_raw"
+    proximity_topic: "/proximity/obstacle"
+    grip_outcome_topic: "/spearhead_servo/grip_success"
+    grip_outcome_timeout_s: 4.0 # Max wait after lifting/retreating for a fresh proximity sample; none -> fail (proximity_timeout)
+    require_proximity_outcome: true # Success comes only from the proximity sensor; false logs "unverified", never "success"
+    attempt_log_file: "/home/heroes/spearhead_attempt_log.csv"
+    grip_close_code: 41
+    ignore_imu: true
+
+    teach: false
+    auto_start: false
+    teach_show_ui: true
+    teach_window_name: "Spearhead Teach"
+    teach_save_key: "s"
+    step_mode: false
+    initial_move_x: 0.0       # Relative forward move to the initial pose (m)
+    initial_move_y: 0.0       # Relative strafe move to the initial pose (m)
+    initial_move_wait_s: 1.5
+    servo_mode: "bbox_ibvs"   # "bbox_ibvs" or legacy "depth_3d"
+
+    setpoint_file: "/home/heroes/spearhead_setpoint.yaml"
+    # Latest teach point from logs: X≈+0.095 m, Y≈+0.036 m, Z≈+0.437 m.
+    # These defaults keep the current target close to the latest teach pose.
+    setpoint_x: 0.095
+    setpoint_y: 0.036
+    setpoint_z: 0.437
+    bbox_goal_u: 320.0         # Default center of a 640x480 frame; overwritten by teach mode
+    bbox_goal_v: 240.0
+    bbox_goal_w: 120.0
+    bbox_goal_h: 120.0
+    bbox_teach_samples: 15
+    bbox_tol_u_px: 8.0        # Stop lateral correction inside this tolerance
+    bbox_tol_v_px: 20.0        # Guard only; there is no vertical correction
+    bbox_tol_scale_ratio: 0.08 # Legacy: only used when bbox_use_depth_z=false
+    bbox_use_depth_z: true     # Bbox selects target; depth controls standoff
+    bbox_target_depth_m: 0.21  # Desired spearhead depth from camera
+    bbox_overshoot_depth_m: 0.20 # Below this, back up only; never grip
+    bbox_lateral_gain_m_per_px: 0.001
+    bbox_forward_gain_m: 0.30  # Legacy: only used when bbox_use_depth_z=false
+
+    roi: [0, 0, 0, 0]
+    detector_mode: "yolo_bbox"   # "depth_blob" or "yolo_bbox"
+    yolo_weights: "/home/heroes/Workspace/eksperimen_R2/grasp_ws/src/regrasp_experiment/config/models/best.pt"
+    yolo_conf: 0.35
+    yolo_iou: 0.45
+    yolo_imgsz: 640
+    yolo_class_id: -1             # -1 = accept any class
+    yolo_fallback_depth_blob: true
+    depth_min_m: 0.10          # Must stay below bbox_overshoot_depth_m
+    depth_max_m: 1.20
+    min_width_m: 0.025
+    max_width_m: 0.30
+    min_blob_px: 40
+    use_hsv_reject: false
+    hsv_lo: [0, 0, 0]
+    hsv_hi: [179, 255, 40]
+    depth_scale_mm: true
+
+    frames_per_measurement: 5
+    measure_timeout_s: 2.0
+    max_measure_failures: 4
+
+    gyro_settle_rad_s: 0.08
+    settle_dwell_s: 0.2
+    settle_timeout_s: 5.0
+
+    gain: 0.75
+    max_step_m: 0.15
+    max_strafe_m: 0.05
+    min_move_m: 0.05
+    tol_lateral_m: 0.010
+    tol_depth_m: 0.020         # Forward convergence tolerance for bbox_use_depth_z mode (m)
+    max_cycles: 12
+    move_wait_s: 0.5
+    max_forward_mps: 0.10
+    max_strafe_mps: 0.08
+    max_yaw_radps: 0.40
+    heading_hold_gain: 1.5
+    heading_tolerance_rad: 0.035
+    odom_timeout_s: 0.75
+    reset_position_tolerance_m: 0.03 # Stop within 3 cm of the saved odometry start pose
+    reset_yaw_tolerance_rad: 0.035
+    reset_linear_gain: 0.8
+    reset_max_linear_mps: 0.08
+    reset_timeout_s: 20.0
+
+    fwd_from_z_sign: -1.0
+    strafe_from_x_sign: -1.0
+
+    pre_grab_codes: [43, 40]
+    pre_grab_waits: [2.0, 1.0]
+    grab_codes: [41, 42]
+    grab_waits: [1.5, 2.0]
+    # Shake test after the close (defaults reproduce the previously hardcoded 3 x (0.10 back, 0.05 forward), 1 s each)
+    wiggle_repeats: 3
+    wiggle_back_m: 0.10
+    wiggle_fwd_m: 0.05
+    wiggle_wait_s: 1.0
+
+    # Used only by legacy depth_3d mode. bbox_ibvs has no blind approach.
+    final_approach_m: 0.40
+    blind_wait_s: 2.0
+    retreat_m: 0.15
+    retreat_wait_s: 1.5

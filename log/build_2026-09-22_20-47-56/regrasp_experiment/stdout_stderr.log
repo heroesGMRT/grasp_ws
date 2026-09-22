@@ -1,0 +1,60 @@
+running develop
+Removing /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp-experiment.egg-link (link to .)
+running egg_info
+writing ../../build/regrasp_experiment/regrasp_experiment.egg-info/PKG-INFO
+writing dependency_links to ../../build/regrasp_experiment/regrasp_experiment.egg-info/dependency_links.txt
+writing entry points to ../../build/regrasp_experiment/regrasp_experiment.egg-info/entry_points.txt
+writing requirements to ../../build/regrasp_experiment/regrasp_experiment.egg-info/requires.txt
+writing top-level names to ../../build/regrasp_experiment/regrasp_experiment.egg-info/top_level.txt
+reading manifest file '../../build/regrasp_experiment/regrasp_experiment.egg-info/SOURCES.txt'
+writing manifest file '../../build/regrasp_experiment/regrasp_experiment.egg-info/SOURCES.txt'
+running build
+running build_py
+copying regrasp_experiment/spearhead_servo.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment
+running install
+running install_lib
+creating /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/config.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/perception.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/__init__.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/detector.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/grip_outcome.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/logger.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/depth_measurement.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/spearhead_dashboard.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/spearhead_servo.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/motion_control.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/memory.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/experiment_node.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/robot.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/pipeline.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+copying /home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/build/lib/regrasp_experiment/scoring.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/config.py to config.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/perception.py to perception.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/detector.py to detector.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/grip_outcome.py to grip_outcome.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/logger.py to logger.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/depth_measurement.py to depth_measurement.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/spearhead_dashboard.py to spearhead_dashboard.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/spearhead_servo.py to spearhead_servo.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/motion_control.py to motion_control.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/memory.py to memory.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/experiment_node.py to experiment_node.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/robot.py to robot.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/pipeline.py to pipeline.cpython-310.pyc
+byte-compiling /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment/scoring.py to scoring.cpython-310.pyc
+running install_data
+copying resource/regrasp_experiment -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/ament_index/resource_index/packages
+copying package.xml -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment
+copying launch/spearhead_servo.launch.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/launch
+copying launch/experiment.launch.py -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/launch
+copying config/params.yaml -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/config
+copying config/spearhead_servo.yaml -> /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/share/regrasp_experiment/config
+running install_egg_info
+Copying ../../build/regrasp_experiment/regrasp_experiment.egg-info to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/python3.10/site-packages/regrasp_experiment-0.1.0-py3.10.egg-info
+running install_scripts
+Installing experiment script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+Installing spearhead_dashboard script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+Installing spearhead_servo script to /home/heroes/Workspace/eksperimen_R2/grasp_ws/install/regrasp_experiment/lib/regrasp_experiment
+writing list of installed files to '/home/heroes/Workspace/eksperimen_R2/grasp_ws/build/regrasp_experiment/install.log'
