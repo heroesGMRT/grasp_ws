@@ -183,8 +183,8 @@ def _launch_setup(context, *args, **kwargs):
         ),
         # Proximity Sensor Node
         Node(
-            package='proxymity',
-            executable='proxymity_node',
+            package='regrasp_experiment',
+            executable='sensor_node',
             name='proximity_sensor',
             output='screen',
             emulate_tty=True,
@@ -203,8 +203,8 @@ def _launch_setup(context, *args, **kwargs):
         ),
         # Proximity Controller Node
         Node(
-            package='proxymity',
-            executable='proxymity_controller_node',
+            package='regrasp_experiment',
+            executable='sensor_controller',
             name='proximity_controller',
             output='screen',
             emulate_tty=True,

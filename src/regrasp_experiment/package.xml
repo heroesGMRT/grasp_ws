@@ -20,7 +20,7 @@
   <exec_depend>python3-tk</exec_depend>
   <exec_depend>python3-gpiod</exec_depend> <!-- Added for real hardware GPIO support -->
   <exec_depend>ament_index_python</exec_depend>
-  <exec_depend>proxymity</exec_depend>
+
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

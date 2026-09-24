@@ -26,6 +26,8 @@ regrasp_experiment/perception.py
 regrasp_experiment/pipeline.py
 regrasp_experiment/robot.py
 regrasp_experiment/scoring.py
+regrasp_experiment/sensor_controller_node.py
+regrasp_experiment/sensor_node.py
 regrasp_experiment/spearhead_dashboard.py
 regrasp_experiment/spearhead_servo.py
 resource/regrasp_experiment
