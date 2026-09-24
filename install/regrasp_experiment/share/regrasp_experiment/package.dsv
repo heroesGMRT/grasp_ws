@@ -4,3 +4,6 @@ source;share/regrasp_experiment/hook/pythonpath.sh
 source;share/regrasp_experiment/hook/ament_prefix_path.ps1
 source;share/regrasp_experiment/hook/ament_prefix_path.dsv
 source;share/regrasp_experiment/hook/ament_prefix_path.sh
+source;../../build/regrasp_experiment/share/regrasp_experiment/hook/pythonpath_develop.ps1
+source;../../build/regrasp_experiment/share/regrasp_experiment/hook/pythonpath_develop.dsv
+source;../../build/regrasp_experiment/share/regrasp_experiment/hook/pythonpath_develop.sh
