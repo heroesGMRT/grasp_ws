@@ -25,6 +25,8 @@ setup(
             "experiment = regrasp_experiment.experiment_node:main",
             "spearhead_servo = regrasp_experiment.spearhead_servo:main",
             "spearhead_dashboard = regrasp_experiment.spearhead_dashboard:main",
+            "sensor_node = regrasp_experiment.sensor_node:main",
+            "sensor_controller = regrasp_experiment.sensor_controller:main",
         ],
     },
 )

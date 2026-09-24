@@ -33,7 +33,7 @@ Colokkan **D455 ke port USB 3.0** (kabel/port biru). Cek: `realsense-viewer`.
 ```bash
 cd "D:/Paper Q2 Robot/grasp_ws"     # di Linux: ~/grasp_ws
 colcon build --packages-select regrasp_experiment
-source install/setup.bash
+   source install/setup.bash
 ```
 
 ## 3. Uji plumbing DULU (pakai stub, tanpa detector/robot nyata)

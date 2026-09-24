@@ -1,4 +1,4 @@
-"""Launch the spearhead visual servo node.
+"""Launch the spearhead visual servo node along with proximity sensor and controller.
 
 Original arguments and defaults are unchanged. On top of that, runs can be
 tagged (method / condition / clutter / object group / run id) so attempt logs
@@ -170,7 +170,9 @@ def _launch_setup(context, *args, **kwargs):
             )
         )
 
-    actions.append(
+    # ---- Nodes to Launch ----
+    actions.extend([
+        # Spearhead Visual Servo Node
         Node(
             package="regrasp_experiment",
             executable="spearhead_servo",
@@ -178,9 +180,53 @@ def _launch_setup(context, *args, **kwargs):
             output="screen",
             emulate_tty=True,
             parameters=[params_file, params],  # YAML first, launch overrides second
-        )
-    )
-    actions.append(
+        ),
+        # Proximity Sensor Node
+        Node(
+            package='proxymity',
+            executable='proxymity_node',
+            name='proximity_sensor',
+            output='screen',
+            emulate_tty=True,
+            parameters=[{
+                'sensor_type': LaunchConfiguration('sensor_type'),
+                'gpio_chip': LaunchConfiguration('gpio_chip'),
+                'publish_rate_hz': LaunchConfiguration('proximity_rate'),
+                'simulate': LaunchConfiguration('simulate'),
+                'frame_id': LaunchConfiguration('frame_id'),
+                'obstacle_threshold_cm': LaunchConfiguration('obstacle_threshold_cm'),
+                'obstacle_confirm_count': LaunchConfiguration('obstacle_confirm_count'),
+                'trigger_pin': LaunchConfiguration('trigger_pin'),
+                'echo_pin': LaunchConfiguration('echo_pin'),
+                'out_pin': LaunchConfiguration('out_pin'),
+            }],
+        ),
+        # Proximity Controller Node
+        Node(
+            package='proxymity',
+            executable='proxymity_controller_node',
+            name='proximity_controller',
+            output='screen',
+            emulate_tty=True,
+            parameters=[{
+                'sensor_topic': LaunchConfiguration('proximity_topic'),
+                'relative_move_topic': LaunchConfiguration('relative_move_topic'),
+                'fsm_command_topic': LaunchConfiguration('fsm_command_topic'),
+                'publish_rate_hz': 10.0,
+                'fsm_command_val': LaunchConfiguration('fsm_command_val'),
+                'initial_relative_y': LaunchConfiguration('initial_relative_y'),
+                'forward_relative_x': LaunchConfiguration('forward_relative_x'),
+                'forward_duration': LaunchConfiguration('forward_duration'),
+                'y_move_interval': LaunchConfiguration('y_move_interval'),
+                'rotate_relative_z': LaunchConfiguration('rotate_relative_z'),
+                'rotate_duration': LaunchConfiguration('rotate_duration'),
+                'flash_area_name': LaunchConfiguration('flash_area_name'),
+                'flash_command_val': LaunchConfiguration('flash_command_val'),
+                'confirm_duration': LaunchConfiguration('confirm_duration'),
+                'confirm_nudge_y': LaunchConfiguration('confirm_nudge_y'),
+            }],
+        ),
+        # Dashboard Node
         Node(
             package="regrasp_experiment",
             executable="spearhead_dashboard",
@@ -188,7 +234,7 @@ def _launch_setup(context, *args, **kwargs):
             output="screen",
             condition=IfCondition(LaunchConfiguration("dashboard")),
         )
-    )
+    ])
     return actions
 
 
@@ -242,6 +288,31 @@ def generate_launch_description():
             arg("overrides", "",
                 "Extra YAML-parameter overrides for sweeps (D3), 'key=value;key=value'. "
                 "Keys must exist in the params file."),
+            # ---- Proximity Sensor Arguments ----
+            arg('sensor_type', 'l18d80', 'Sensor type: "hcsr04" or "l18d80"'),
+            arg('gpio_chip', '/dev/gpiochip0', 'GPIO chip device path'),
+            arg('proximity_rate', '30.0', 'Publish rate in Hz for proximity sensor'),
+            arg('simulate', 'false', 'Run in simulation mode (no GPIO)'),
+            arg('frame_id', 'proximity_link', 'Frame ID for Range message'),
+            arg('obstacle_threshold_cm', '10.0', 'Obstacle detection threshold in cm for HC-SR04'),
+            arg('obstacle_confirm_count', '7', 'Consecutive True raw reads required to confirm an obstacle'),
+            arg('trigger_pin', '11', 'GPIO line for HC-SR04 TRIG pin'),
+            arg('echo_pin', '12', 'GPIO line for HC-SR04 ECHO pin'),
+            arg('out_pin', '144', 'GPIO line for L18D80 OUT pin'),
+            # ---- Proximity Controller Arguments ----
+            arg('relative_move_topic', '/relative_move_slow', 'Topic for Vector3 relative move commands'),
+            arg('fsm_command_topic', '/fsm_command', 'Topic for FSM integer commands'),
+            arg('fsm_command_val', '31', 'FSM command code to send when sensor returns True'),
+            arg('initial_relative_y', '-0.5', 'Relative Y move when sensor is clear (strafing)'),
+            arg('forward_relative_x', '-1.5', 'Relative X move when sensor detects an obstacle'),
+            arg('forward_duration', '3.0', 'Duration in seconds to send forward relative move command'),
+            arg('y_move_interval', '0.5', 'Interval in seconds between incremental Y relative move publishes'),
+            arg('rotate_relative_z', '180.0', 'Relative Z move to rotate the robot'),
+            arg('rotate_duration', '2.0', 'Duration in seconds to send the rotation command'),
+            arg('flash_area_name', 'AREA_2', 'Area name sent to /fsm/area_command'),
+            arg('flash_command_val', '-1', 'FSM command to publish once green flash is confirmed'),
+            arg('confirm_duration', '1.0', 'Duration in seconds sensor must stay True to confirm detection'),
+            arg('confirm_nudge_y', '-0.3', 'Relative Y nudge when confirmation fails'),
             OpaqueFunction(function=_launch_setup),
         ]
     )
